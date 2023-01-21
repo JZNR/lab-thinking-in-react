@@ -9,7 +9,8 @@ function ProductTable(props) {
                 <th>Name</th>
                 <th>Price</th>
             </tr>
-                <ProductRow products={props.products}/>
+          
+                <ProductRow showInStock={props.handleProductsInStock} products={props.products} />
         </table>
     </div>
   )
